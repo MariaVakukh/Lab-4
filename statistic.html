@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика по купленим піцам</title>
+
+    <script src="https://cdn.webdatarocks.com/latest/webdatarocks.js"></script>
+    <script src="https://cdn.webdatarocks.com/latest/webdatarocks.toolbar.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link href="https://cdn.webdatarocks.com/latest/theme/orange/webdatarocks.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <section class="statistic">
+        
+        <header>
+            <div class="discount-badge">
+                <img src="images/discount.svg" alt="Discount Badge">
+                <span>
+                    <p>PIZZA<br>KMA</p>
+                </span>
+            </div>
+            <div class="header">
+                <div class="frow">
+                    <div class="htext">
+                        <p class="phone">(044) 222 5 222</p>
+                        <p class="work-h">24 години/7 днів на тиждень</p>
+                        <p class="free-del">Безкоштовна доставка</p>
+                    </div>
+                    <button class="orng"> Ввійти </button>                   
+                </div>
+                <div class="srow">
+                    <p class="section-name" onclick="MenuPage()">Піца</p>
+                    <p>|</p>
+                    <p>Статистика</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="stats-container">
+            <div class="table">
+            <div id="wdr-component"></div>
+            </div>
+            <div class="charts">
+                <div id="small-chart-container"></div>
+                <div id="big-chart-container"></div>
+            </div>
+        </div>
+
+        <div class="pointers">
+            <img src="images/man.png">
+            <img src="images/man2.png">
+        </div>
+
+        <div class="piz">
+            <img src="images/piz.png">
+        </div>
+
+
+<!--         <div class="badge-footer">
+            <img src="images/discount.svg" alt="Discount Badge">
+            <div class="btext">
+                <p class="btext-caption">Цього тижня на ВСЕ</p><hr><p>-20%</p>
+            </div>
+        </div> -->
+        <footer>
+            <p class="ftext">Pizza.22 - практичний проект в межах курсу JavaScript
+                в Києво-Могилянській Академії<br> Доставка піци не здійснюється</p>
+        </footer>
+    </section>
+    
+
+    <script  src="stats.js"></script>
+</body>
+</html>

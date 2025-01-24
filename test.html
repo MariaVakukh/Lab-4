@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="flex">
+    <template id="pizza-template">
+        <div class="pizza">
+            <img class="pizza-img" src="" alt="">
+            <div class="badge"></div>
+            <p class="name"></p>
+            <p class="type"></p>
+            <p class="description"></p>
+            <div class="size-weight">
+                <div class="size">
+                    <div class="radius flex">
+                        <img src="images/size-icon.svg">
+                        <p class="icon">30</p>
+                    </div>
+                    <div class="weight flex">
+                        <img src="images/weight.svg">
+                        <p class="icon small-weight"></p>
+                    </div>
+                    <div class="price-container">
+                        <p class="price small-price"></p><p>грн.</p>
+                    </div>
+                    <button class="orng">Купити</button>
+                </div>
+                <div class="size">
+                    <div class="radius flex">
+                        <img src="images/size-icon.svg">
+                        <p class="icon">40</p>
+                    </div>
+                    <div class="weight flex">
+                        <img src="images/weight.svg">
+                        <p class="icon big-weight"></p>
+                    </div>
+                    <div class="price-container">
+                        <p class="price big-price"></p><p>грн.</p>
+                    </div>
+                    <button class="orng">Купити</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="order-item-template">
+        <div class="item flex">
+            <div class="idescription">
+                <p class="ordered-pizza"></p>
+                <div class="params flex">
+                    <div class="radius flex">
+                        <img src="images/size-icon.svg" >
+                        <p class="icon"></p>
+                    </div>
+                    <div class="weight flex">
+                        <img src="images/weight.svg" >
+                        <p class="icon"></p>
+                    </div>
+                </div>
+                <div class="controls flex">
+                    <p class="order-price"></p>
+                    <div class="order-amount-container">
+                        <button class="round minus">–</button>
+                        <p class="order-amount"></p>
+                        <button class="round plus">+</button>
+                    </div>
+                    <button class="round cross">×</button>
+                </div>
+            </div>
+            <div class="ordered-img-cont">
+                <img src="" alt="pizza" class="ordered-img">
+            </div>
+        </div>
+    </template>
+
+    <div class="left-section">
+        <header>
+            <div class="discount-badge">
+                <img src="images/discount.svg" alt="Discount Badge">
+                <span>
+                    <p>PIZZA<br>KMA</p>
+                </span>
+            </div>
+            <div class="header">
+                <div class="frow">
+                    <div class="htext">
+                        <p class="phone">(044) 222 5 222</p>
+                        <p class="work-h">24 години/7 днів на тиждень</p>
+                        <p class="free-del">Безкоштовна доставка</p>
+                    </div>
+                    <button class="orng"> Ввійти </button>                   
+                </div>
+                <div class="srow">
+                    <p>Піца</p>
+                    <p>|</p>
+                    <p class="stats" onclick="redirectToStatisticsPage()">Статистика</p>
+                </div>
+            </div>
+        </header>
+        
+        <section class="pizza-catalogue">
+            <div class="title">
+                <h1>Усі піци</h1>
+                <span class="amount">8</span>
+            </div>
+            <div class="categories pizza-types-section">
+                <button class="pizza-type selected">Усі</button>
+                <button class="pizza-type">М'ясні</button>
+                <button class="pizza-type">З ананасами</button>
+                <button class="pizza-type">З грибами</button>
+                <button class="pizza-type">З морепродуктами</button>
+                <button class="pizza-type">Вега</button>
+            </div>
+            <div class="pizza-menu"></div>
+
+        </section>
+        <div class="badge-footer">
+            <img src="images/discount.svg" alt="Discount Badge">
+            <div class="btext">
+                <p class="btext-caption">Цього тижня на ВСЕ</p><hr><p>-20%</p>
+            </div>
+        </div>
+        <footer>
+            <p class="ftext">Pizza.22 - практичний проект в межах курсу JavaScript
+                в Києво-Могилянській Академії<br> Доставка піци не здійснюється</p>
+        </footer>
+    </div>
+    <section class="right-section">
+        <div class="rheader">
+            <div class="rtitle flex">
+                <h3>Замовлення</h3>
+                <p class="amount">3</p>
+            </div>
+            <p class="rdescription">Очистити замовлення</p>
+        </div>
+        <div class="order-list"> </div>
+        <footer class="fsection">
+            <div class="total-price-container">
+                <p class="total-price">Сума замовлення:</p>
+                <p class="total-price">924 грн</p>
+            </div>
+            <button class="order-button">Замовити</button>
+        </footer>
+    </section>
+
+ 
+    <script  src="script.js"></script>
+</body>
+</html>
